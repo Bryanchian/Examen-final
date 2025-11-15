@@ -7,7 +7,7 @@ int main() {
     printf("Ejercicio 2\n");
     printf("Ingrese un nombre\n");
     if (fgets(name, sizeof(name), stdin) != NULL) {
-        /* quitar salto de linea final si existe */
+        
         size_t n = strlen(name);
         if (n > 0 && name[n-1] == '\n') name[n-1] = '\0';
         printf("Hola %s\n", name);
